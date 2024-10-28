@@ -19,8 +19,6 @@ public class Contador implements Runnable{
         synchronized (sinc) {
             for (int i = 0; i < incrementa; i++) {
                 contador++;
-                System.out.println("Contador: " + contador);
-
             }
             System.out.println("Thred " + getNomeThread() + " Terminou o processo");
         }
